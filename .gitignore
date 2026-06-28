@@ -1,0 +1,5 @@
+known_posts.json
+products_data.json
+__pycache__/
+*.pyc
+node_modules/
