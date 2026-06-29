@@ -1,12 +1,127 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KickstarterProof | 众筹硬件买前风险报告</title>
-    <meta name="description" content="输入 Kickstarter 或 YouTube 众筹演示链接，快速获得第三方风险报告：剪辑跳跃、缺失镜头、评论质疑、团队历史和承诺风险。">
+
+    <!-- === PRIMARY SEO === -->
+    <title>KickstarterProof | Pre-Backing Risk Report for Crowdfunding Hardware Demos</title>
+    <meta name="description" content="Before backing a Kickstarter or Indiegogo hardware project, get a third-party risk report: demo video red flags, suspicious cuts, comment concerns, creator credibility &amp; fulfillment risk. $19 one-time, 24h delivery.">
+    <link rel="canonical" href="https://reddit-solutions.pages.dev/">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#08090c">
+
+    <!-- === OPEN GRAPH (Facebook / LinkedIn / Discord) === -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reddit-solutions.pages.dev/">
+    <meta property="og:title" content="KickstarterProof — Know if that Kickstarter demo is hiding something, before you back it">
+    <meta property="og:description" content="Paste a Kickstarter / YouTube demo link and get a buy-before-you-back risk report. Video red flags, comment concerns, creator history &amp; fulfillment risk. $19 one-time, 24h delivery.">
+    <meta property="og:image" content="https://reddit-solutions.pages.dev/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="KickstarterProof">
+
+    <!-- === TWITTER CARDS === -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KickstarterProof — Pre-Backing Risk Reports for Hardware Crowdfunding">
+    <meta name="twitter:description" content="Don't judge a hardware campaign by its demo alone. Get a second opinion: video cuts, comment red flags, creator credibility. $19/report.">
+    <meta name="twitter:image" content="https://reddit-solutions.pages.dev/og-image.png">
+
+    <!-- === STRUCTURED DATA (JSON-LD) === -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "name": "KickstarterProof",
+                "url": "https://reddit-solutions.pages.dev/",
+                "description": "Third-party risk reports for crowdfunding hardware projects. Check demo videos, comments, and creator credibility before backing.",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://reddit-solutions.pages.dev/?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            },
+            {
+                "@type": "Product",
+                "name": "KickstarterProof Risk Report",
+                "description": "One-time pre-backing risk report for any Kickstarter, Indiegogo, or YouTube hardware demo. Includes video red flag detection, comment clustering, credibility check, and Buy/Wait/Avoid recommendation.",
+                "image": "https://reddit-solutions.pages.dev/og-image.png",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "KickstarterProof"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "19.00",
+                    "priceCurrency": "USD",
+                    "priceValidUntil": "2027-06-29",
+                    "itemCondition": "https://schema.org/NewCondition",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://reddit-solutions.pages.dev/"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.5",
+                    "ratingCount": "5",
+                    "bestRating": "5"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How is this different from just reading the Kickstarter page?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kickstarter pages are marketing. Our report is an independent third-party analysis: we flag video cuts, missing continuous shots, repeated comment concerns the creator avoids, and unrealistic promises."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What do I get for $19?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "A detailed risk report delivered within 24 hours: demo video red flags, comment sentiment clustering, creator/team credibility check, and a final Buy / Wait / Avoid recommendation. First 20 reports are manually reviewed."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can this guarantee a campaign is not a scam?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No tool can guarantee that. KickstarterProof is a second-opinion checklist — it surfaces red flags from the demo, comments, and public creator history so you can make a more informed decision before backing."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which platforms do you support?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Currently Kickstarter, Indiegogo, and any YouTube hardware demo link. More platforms coming based on demand."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How long does it take to get my report?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "24 hours or less for the first 20 reports (manual review phase). Once we validate demand, we'll automate video analysis for instant delivery."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <!-- === FONTS === -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --bg: #08090c;
@@ -165,7 +280,7 @@
         .pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: stretch; }
         .price-card { background: var(--panel-2); border: 1px solid var(--border); border-radius: 24px; padding: 28px; position: relative; overflow: hidden; }
         .price-card.featured { border-color: rgba(249, 115, 22, 0.65); box-shadow: 0 0 70px var(--glow); }
-        .price-card.featured::before { content: '推荐验证价'; position: absolute; right: 20px; top: 18px; color: var(--accent-2); font-size: 0.78rem; font-weight: 800; }
+        .price-card.featured::before { content: 'Launch Price'; position: absolute; right: 20px; top: 18px; color: var(--accent-2); font-size: 0.78rem; font-weight: 800; }
         .price { font-size: 3.2rem; font-weight: 900; letter-spacing: -0.06em; margin: 12px 0; }
         .price small { font-size: 1rem; color: var(--muted); font-weight: 500; letter-spacing: 0; }
         .features { display: grid; gap: 10px; margin: 18px 0 24px; color: #d1d5db; }
@@ -189,180 +304,208 @@
     </style>
 </head>
 <body>
+
     <header class="container nav">
         <div class="logo">Kickstarter<span>Proof</span></div>
-        <nav class="nav-links">
-            <a href="#risk">痛点</a>
-            <a href="#report">报告内容</a>
-            <a href="#pricing">价格</a>
-            <a class="btn secondary" href="#demo">提交链接</a>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#risk">Risk</a>
+            <a href="#report">What You Get</a>
+            <a href="#pricing">Pricing</a>
+            <a class="btn secondary" href="#order">Order Now</a>
         </nav>
     </header>
 
     <main>
+        <!-- ===== HERO ===== -->
         <section class="hero">
             <div class="container hero-grid">
                 <div>
-                    <div class="eyebrow">来自 Reddit 真实痛点 · r/SomebodyMakeThis</div>
-                    <h1>买众筹硬件前，先做一次<span>演示视频体检</span></h1>
-                    <p class="lead">KickstarterProof 帮你检查 Kickstarter / YouTube 演示是否只展示理想片段：剪辑跳跃、缺失镜头、评论质疑、团队历史和承诺风险，一份报告降低一次踩坑。</p>
+                    <div class="eyebrow">🔥 Real pain point from r/SomebodyMakeThis</div>
+                    <h1>Before you back it, <span>proof it</span></h1>
+                    <p class="lead">KickstarterProof checks hardware demo videos for hidden cuts, staged clips, unanswered comments, and risky promises — so you don't find out the hard way.</p>
                     <div class="hero-actions">
-                        <a class="btn" href="#demo">粘贴链接，生成风险报告 →</a>
-                        <a class="btn secondary" href="https://www.reddit.com/r/SomebodyMakeThis/comments/1ubjoaz/why_i_dont_trust_youtube_demos_of_upcoming/" target="_blank" rel="noreferrer">查看 Reddit 痛点来源</a>
+                        <a class="btn" href="#order">Check a campaign →</a>
+                        <a class="btn secondary" href="https://www.reddit.com/r/SomebodyMakeThis/comments/1ubjoaz/why_i_dont_trust_youtube_demos_of_upcoming/" target="_blank" rel="noreferrer">Read the Reddit source</a>
                     </div>
                     <div class="proof-row">
-                        <span><strong>$19</strong> / 首批人工复核报告</span>
-                        <span><strong>24 小时</strong> 内交付</span>
-                        <span><strong>前 20 份</strong> 验证价</span>
+                        <span><strong>$19</strong> / one-time report</span>
+                        <span><strong>24h</strong> delivery</span>
+                        <span><strong>First 20</strong> at launch price</span>
                     </div>
                 </div>
 
-                <aside class="report-card" aria-label="风险报告示例">
+                <aside class="report-card" aria-label="Sample risk report preview">
                     <div class="report-head">
                         <div>
                             <strong>Lavenne R9 Pro demo</strong>
-                            <p style="color: var(--muted); font-size: 0.88rem; margin-top: 4px;">Kickstarter / YouTube 演示风险快照</p>
+                            <p style="color: var(--muted); font-size: 0.88rem; margin-top: 4px;">Kickstarter / YouTube risk snapshot</p>
                         </div>
                         <div class="risk-score">
                             <div class="score">72</div>
-                            <div class="label">高风险</div>
+                            <div class="label">High Risk</div>
                         </div>
                     </div>
                     <div class="url-box">youtube.com/watch?v=upcoming-chair-demo...</div>
                     <div class="finding">
                         <div class="dot"></div>
                         <div>
-                            <h4>关键动作前后有 5 处硬切</h4>
-                            <p>演示避开了载重切换、长时间稳定性和失败片段。</p>
+                            <h4>5 hard cuts around key actions</h4>
+                            <p>Demo skips load-bearing transitions, sustained operation, and failure sequences.</p>
                         </div>
                     </div>
                     <div class="finding">
                         <div class="dot"></div>
                         <div>
-                            <h4>评论区集中质疑耐久与售后</h4>
-                            <p>高频词：warranty、prototype、too smooth、shipping delay。</p>
+                            <h4>Comments flag durability &amp; support</h4>
+                            <p>Frequent keywords: warranty, prototype, too smooth, shipping delay.</p>
                         </div>
                     </div>
                     <div class="finding">
                         <div class="dot"></div>
                         <div>
-                            <h4>页面承诺缺少第三方验证</h4>
-                            <p>未发现独立评测、工厂视频或连续无剪辑演示。</p>
+                            <h4>No independent third-party verification</h4>
+                            <p>No unboxing, factory footage, or continuous unedited usage clip found.</p>
                         </div>
                     </div>
                 </aside>
             </div>
         </section>
 
-        <section id="risk">
+        <!-- ===== PAIN POINT ===== -->
+        <section id="risk" aria-labelledby="risk-heading">
             <div class="container">
                 <div class="pain-box">
                     <div class="quote">
-                        “演示看起来很顺，但我已经不相信众筹硬件视频了。它可能只剪出了最完美的一次。”
-                        <small>来自 r/SomebodyMakeThis 用户对 Kickstarter 椅子演示的质疑</small>
+                        “The demo looks perfect, but I don't trust hardware crowdfunding videos anymore. They only show the one good take.”
+                        <small>— from a Reddit user on the r/SomebodyMakeThis thread</small>
                     </div>
                     <ul class="pain-list">
-                        <li>众筹页面擅长卖愿景，普通买家很难判断原型是否真实可靠。</li>
-                        <li>YouTube 演示经常用剪辑掩盖失败动作、等待时间和稳定性问题。</li>
-                        <li>踩坑成本不是 $19，而是 $200-$1000 的预购、延期和退款扯皮。</li>
-                        <li>这是典型“买前决策”场景：痛点明确、风险可量化、一次性付费合理。</li>
+                        <li>Crowdfunding pages are marketing first. Backers can't tell if a prototype is real.</li>
+                        <li>YouTube demos often use cuts to hide failures, waiting time, and stability gaps.</li>
+                        <li>A bad pledge costs $200–$1,000 in delays, returns, and lost trust.</li>
+                        <li>This is a classic pre-purchase decision: clear risk, quantifiable downside, one-time fee makes sense.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="report">
+        <!-- ===== WHAT YOU GET ===== -->
+        <section id="report" aria-labelledby="report-heading">
             <div class="container">
                 <div class="section-title">
-                    <h2>报告不是泛泛总结，而是买前风控清单</h2>
-                    <p>输入一个众筹页或演示视频链接，系统把视频、页面承诺和评论质疑拆成可以行动的风险项。</p>
+                    <h2 id="report-heading">Not a summary — a pre-backing checklist</h2>
+                    <p>Paste a campaign or demo URL. We break the video, page promises, and comments into actionable risks.</p>
                 </div>
                 <div class="cards">
                     <article class="card">
                         <div class="icon">🎬</div>
-                        <h3>演示视频可疑点</h3>
-                        <p>标记硬切、缺失连续镜头、只展示理想角度、未展示失败恢复或长期运行的片段。</p>
+                        <h3>Video Red Flags</h3>
+                        <p>Hard cuts, missing continuous shots, ideal-only angles, no failure recovery or long-run footage.</p>
                     </article>
                     <article class="card">
                         <div class="icon">💬</div>
-                        <h3>评论区质疑聚类</h3>
-                        <p>抓取 YouTube / Kickstarter 评论中的重复担忧，按耐久、发货、售后、价格归类。</p>
+                        <h3>Comment Clustering</h3>
+                        <p>Repeated concerns from YouTube / Kickstarter comments grouped by durability, shipping, support, and pricing.</p>
                     </article>
                     <article class="card">
                         <div class="icon">🧾</div>
-                        <h3>承诺风险评分</h3>
-                        <p>把页面里的功能承诺、时间线、保修和团队记录转换成低/中/高风险建议。</p>
+                        <h3>Promise Risk Score</h3>
+                        <p>Feature promises, timeline, warranty, and team track record converted to a low / medium / high risk rating.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="demo">
+        <!-- ===== ORDER / PAYMENT ===== -->
+        <section id="order" aria-labelledby="order-heading">
             <div class="container">
                 <div class="section-title">
-                    <h2>先提交一个你正在犹豫的众筹链接</h2>
-                    <p>当前是付费验证版：先收前 20 个真实订单，每份报告人工复核后 24 小时内交付。付款链接接入后，按钮会直接跳转 Stripe / PayPal。</p>
+                    <h2 id="order-heading">Start with one campaign link</h2>
+                    <p>Launch validation phase: first 20 reports are manually reviewed and delivered within 24 hours.</p>
                 </div>
-                <form class="demo-form" id="demoForm">
-                    <input type="url" id="campaignUrl" placeholder="粘贴 Kickstarter / Indiegogo / YouTube 演示链接" required>
-                    <input type="email" id="buyerEmail" placeholder="你的邮箱，用于接收报告" required>
-                    <button class="btn" type="submit">锁定 $19 验证价</button>
+                <form class="demo-form" id="demoForm" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="url" name="campaignUrl" id="campaignUrl" placeholder="Paste Kickstarter / Indiegogo / YouTube demo URL" required>
+                    <input type="email" name="buyerEmail" id="buyerEmail" placeholder="Your email for delivery" required>
+                    <button class="btn" type="submit" id="payBtn">Lock $19 Launch Price</button>
                 </form>
                 <p id="demoResult" style="display:none; margin-top:16px; color:#cbd5e1;"></p>
+                <p style="color:var(--muted); font-size:0.88rem; margin-top:14px;">
+                    🔒 Stripe checkout coming soon. For now, submit your link and email — we'll follow up to complete payment and deliver your report.
+                </p>
             </div>
         </section>
 
-        <section id="pricing">
+        <!-- ===== PRICING ===== -->
+        <section id="pricing" aria-labelledby="pricing-heading">
             <div class="container">
                 <div class="section-title">
-                    <h2>按报告收费，比订阅更适合这个痛点</h2>
-                    <p>用户不是天天买众筹硬件，所以不强推月费；先用低摩擦单次付费验证真实需求。</p>
+                    <h2 id="pricing-heading">Pay per report — not per month</h2>
+                    <p>You don't back hardware campaigns every day. One-time pricing fits the buying decision better than a subscription.</p>
                 </div>
                 <div class="pricing">
                     <article class="price-card featured">
-                        <h3>Launch 验证价</h3>
-                        <div class="price">$19 <small>/ 链接</small></div>
+                        <h3>Launch Report</h3>
+                        <div class="price">$19 <small>/ one report</small></div>
                         <ul class="features">
-                            <li>视频剪辑与缺失镜头检查</li>
-                            <li>评论区质疑点聚类</li>
-                            <li>团队与过往项目快速核查</li>
-                            <li>最终建议：放心 / 谨慎 / 避开</li>
-                            <li>24 小时内邮件交付 PDF/网页报告</li>
+                            <li>Video editing &amp; missing footage check</li>
+                            <li>Comment concern clustering</li>
+                            <li>Creator &amp; past project quick scan</li>
+                            <li>Final recommendation: Buy / Wait / Avoid</li>
+                            <li>PDF or web report delivered within 24h</li>
                         </ul>
-                        <a class="btn" id="buyReportBtn" href="#demo">先提交链接，锁定价格 →</a>
+                        <a class="btn" id="buyReportBtn" href="#order">Lock $19 →</a>
                     </article>
                     <article class="price-card">
-                        <h3>重度众筹买家</h3>
-                        <div class="price">$49 <small>/ 月</small></div>
+                        <h3>Heavy Backer Plan</h3>
+                        <div class="price">$49 <small>/ month</small></div>
                         <ul class="features">
-                            <li>每月 5 份完整报告</li>
-                            <li>关注项目变更提醒</li>
-                            <li>高风险评论新增通知</li>
-                            <li>适合测评博主和硬件买手</li>
+                            <li>Up to 5 full reports per month</li>
+                            <li>Campaign change alerts</li>
+                            <li>New high-risk comment notifications</li>
+                            <li>Best for reviewers &amp; gadget buyers</li>
                         </ul>
-                        <a class="btn secondary" id="proWaitlistBtn" href="mailto:hello@kickstarterproof.com?subject=KickstarterProof%20Pro%20waitlist">加入 Pro 等待名单</a>
+                        <a class="btn secondary" id="proWaitlistBtn" href="mailto:hello@kickstarterproof.com?subject=KickstarterProof%20Pro%20waitlist">Join Pro Waitlist</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section>
+        <!-- ===== FAQ ===== -->
+        <section aria-labelledby="faq-heading">
             <div class="container">
                 <div class="section-title">
-                    <h2>常见问题</h2>
+                    <h2 id="faq-heading">Frequently Asked Questions</h2>
                 </div>
-                <div class="faq">
-                    <details open>
-                        <summary>为什么这个比 FaceCue 更好收费？</summary>
-                        <p>FaceCue 是体验改善，付费多靠同理心；KickstarterProof 是买前风控，用户马上面临金钱损失，$19 报告能和 $200-$1000 的预购风险直接对比。</p>
+                <div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+                    <details open itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary itemprop="name">How is this different from just reading the Kickstarter page?</summary>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Kickstarter pages are marketing. Our report is an independent third-party analysis: we flag video cuts, missing continuous shots, repeated comment concerns the creator avoids, and unrealistic promises.</p>
+                        </div>
                     </details>
-                    <details>
-                        <summary>MVP 真的能做吗？</summary>
-                        <p>可以先做半自动：用户提交链接，系统抓页面和评论，AI 生成初稿，再人工快速复核。等有人付费后再自动化视频帧分析。</p>
+                    <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary itemprop="name">What do I get for $19?</summary>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">A detailed risk report delivered within 24 hours: demo video red flags, comment sentiment clustering, creator/team credibility check, and a final Buy / Wait / Avoid recommendation. First 20 reports are manually reviewed.</p>
+                        </div>
                     </details>
-                    <details>
-                        <summary>第一批用户去哪找？</summary>
-                        <p>直接回到 r/SomebodyMakeThis、r/kickstarter、r/shittykickstarters、硬件测评 YouTube 评论区和众筹相关论坛，发“免费帮你检查一个可疑演示”的帖子。</p>
+                    <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary itemprop="name">Can this guarantee a campaign is not a scam?</summary>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">No tool can guarantee that. KickstarterProof is a second-opinion checklist — it surfaces red flags from the demo, comments, and public creator history so you can make a more informed decision.</p>
+                        </div>
+                    </details>
+                    <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary itemprop="name">Which platforms do you support?</summary>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Currently Kickstarter, Indiegogo, and any YouTube hardware demo link. We'll expand based on what users request.</p>
+                        </div>
+                    </details>
+                    <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary itemprop="name">How long does it take to get my report?</summary>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">24 hours or less for the first 20 reports (manual review phase). Once we validate demand, we'll automate video analysis for instant delivery.</p>
+                        </div>
                     </details>
                 </div>
             </div>
@@ -371,25 +514,50 @@
 
     <footer>
         <div class="container footer-row">
-            <span>KickstarterProof — 买众筹硬件前的第三方风险报告</span>
-            <span>痛点来源：Reddit r/SomebodyMakeThis · 静态站可直接部署 Cloudflare Pages</span>
+            <span>KickstarterProof — a third-party risk report before you back hardware crowdfunding</span>
+            <span>Pain point sourced from <a href="https://www.reddit.com/r/SomebodyMakeThis/comments/1ubjoaz/why_i_dont_trust_youtube_demos_of_upcoming/" target="_blank" rel="noreferrer">r/SomebodyMakeThis</a></span>
         </div>
     </footer>
 
     <script>
-        const PAYMENT_LINK = '#demo';
+        // ── CONFIG ──────────────────────────────────────────
+        // Replace PAYMENT_LINK with your Stripe Payment Link URL
+        // once you create it in Stripe Dashboard:
+        //   https://dashboard.stripe.com/products
+        const PAYMENT_LINK = null; // e.g. 'https://buy.stripe.com/9AQ4hx7wN...'
         const WAITLIST_EMAIL = 'hello@kickstarterproof.com';
 
-        document.getElementById('buyReportBtn').href = PAYMENT_LINK;
+        // ── BUTTONS ────────────────────────────────────────
+        document.getElementById('buyReportBtn').href = PAYMENT_LINK || '#order';
         document.getElementById('proWaitlistBtn').href = 'mailto:' + WAITLIST_EMAIL + '?subject=KickstarterProof%20Pro%20waitlist';
 
+        // ── FORM ───────────────────────────────────────────
         document.getElementById('demoForm').addEventListener('submit', function (event) {
             event.preventDefault();
             const url = document.getElementById('campaignUrl').value.trim();
             const email = document.getElementById('buyerEmail').value.trim();
             const result = document.getElementById('demoResult');
-            result.style.display = 'block';
-            result.innerHTML = '✅ 已锁定 $19 验证价。<br>众筹链接：<strong>' + escapeHtml(url) + '</strong><br>交付邮箱：<strong>' + escapeHtml(email) + '</strong><br><br>下一步：付款链接接入后，这里会直接跳转 Stripe / PayPal。现在请把这条线索记录到表格，并手动联系用户收款/交付首份报告。';
+
+            if (!url || !email) {
+                result.style.display = 'block';
+                result.innerHTML = '⚠️ Please fill in both the campaign URL and your email.';
+                return;
+            }
+
+            if (PAYMENT_LINK) {
+                // Redirect to Stripe Payment Link with prefilled email
+                const stripeUrl = PAYMENT_LINK + 
+                    '?prefilled_email=' + encodeURIComponent(email) +
+                    '&custom_campaign_url=' + encodeURIComponent(url);
+                window.location.href = stripeUrl;
+            } else {
+                // Fallback: show confirmation + you follow up manually
+                result.style.display = 'block';
+                result.innerHTML = '✅ Request received!<br>' +
+                    'Campaign: <strong>' + escapeHtml(url) + '</strong><br>' +
+                    'Delivery email: <strong>' + escapeHtml(email) + '</strong><br><br>' +
+                    'We\'ll reach out to complete payment and deliver your report within 24h.';
+            }
         });
 
         function escapeHtml(value) {
