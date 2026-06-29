@@ -3,3 +3,8 @@ products_data.json
 __pycache__/
 *.pyc
 node_modules/
+.env
+.env.*
+!.env.example
+*.local
+secrets/

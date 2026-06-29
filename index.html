@@ -211,9 +211,9 @@
                         <a class="btn secondary" href="https://www.reddit.com/r/SomebodyMakeThis/comments/1ubjoaz/why_i_dont_trust_youtube_demos_of_upcoming/" target="_blank" rel="noreferrer">查看 Reddit 痛点来源</a>
                     </div>
                     <div class="proof-row">
-                        <span><strong>$19</strong> / 单次报告</span>
-                        <span><strong>10 分钟</strong> 初步风险摘要</span>
-                        <span><strong>无需订阅</strong> 买前一次性决策</span>
+                        <span><strong>$19</strong> / 首批人工复核报告</span>
+                        <span><strong>24 小时</strong> 内交付</span>
+                        <span><strong>前 20 份</strong> 验证价</span>
                     </div>
                 </div>
 
@@ -301,11 +301,12 @@
             <div class="container">
                 <div class="section-title">
                     <h2>先提交一个你正在犹豫的众筹链接</h2>
-                    <p>当前是验证版：提交后先返回模拟风险摘要，并收集高意向买家邮箱。真正收费时接 Stripe 单次报告。</p>
+                    <p>当前是付费验证版：先收前 20 个真实订单，每份报告人工复核后 24 小时内交付。付款链接接入后，按钮会直接跳转 Stripe / PayPal。</p>
                 </div>
                 <form class="demo-form" id="demoForm">
                     <input type="url" id="campaignUrl" placeholder="粘贴 Kickstarter / Indiegogo / YouTube 演示链接" required>
-                    <button class="btn" type="submit">生成风险摘要</button>
+                    <input type="email" id="buyerEmail" placeholder="你的邮箱，用于接收报告" required>
+                    <button class="btn" type="submit">锁定 $19 验证价</button>
                 </form>
                 <p id="demoResult" style="display:none; margin-top:16px; color:#cbd5e1;"></p>
             </div>
@@ -319,15 +320,16 @@
                 </div>
                 <div class="pricing">
                     <article class="price-card featured">
-                        <h3>单次风险报告</h3>
+                        <h3>Launch 验证价</h3>
                         <div class="price">$19 <small>/ 链接</small></div>
                         <ul class="features">
                             <li>视频剪辑与缺失镜头检查</li>
                             <li>评论区质疑点聚类</li>
                             <li>团队与过往项目快速核查</li>
                             <li>最终建议：放心 / 谨慎 / 避开</li>
+                            <li>24 小时内邮件交付 PDF/网页报告</li>
                         </ul>
-                        <a class="btn" href="#demo">提交链接开始验证 →</a>
+                        <a class="btn" id="buyReportBtn" href="#demo">先提交链接，锁定价格 →</a>
                     </article>
                     <article class="price-card">
                         <h3>重度众筹买家</h3>
@@ -338,7 +340,7 @@
                             <li>高风险评论新增通知</li>
                             <li>适合测评博主和硬件买手</li>
                         </ul>
-                        <a class="btn secondary" href="mailto:hello@kickstarterproof.com?subject=KickstarterProof%20Pro%20waitlist">加入 Pro 等待名单</a>
+                        <a class="btn secondary" id="proWaitlistBtn" href="mailto:hello@kickstarterproof.com?subject=KickstarterProof%20Pro%20waitlist">加入 Pro 等待名单</a>
                     </article>
                 </div>
             </div>
@@ -375,12 +377,19 @@
     </footer>
 
     <script>
+        const PAYMENT_LINK = '#demo';
+        const WAITLIST_EMAIL = 'hello@kickstarterproof.com';
+
+        document.getElementById('buyReportBtn').href = PAYMENT_LINK;
+        document.getElementById('proWaitlistBtn').href = 'mailto:' + WAITLIST_EMAIL + '?subject=KickstarterProof%20Pro%20waitlist';
+
         document.getElementById('demoForm').addEventListener('submit', function (event) {
             event.preventDefault();
             const url = document.getElementById('campaignUrl').value.trim();
+            const email = document.getElementById('buyerEmail').value.trim();
             const result = document.getElementById('demoResult');
             result.style.display = 'block';
-            result.innerHTML = '✅ 已收到链接：<strong>' + escapeHtml(url) + '</strong><br>验证版提示：正式产品会在这里展示 3 条免费风险摘要，并引导购买 $19 完整报告。';
+            result.innerHTML = '✅ 已锁定 $19 验证价。<br>众筹链接：<strong>' + escapeHtml(url) + '</strong><br>交付邮箱：<strong>' + escapeHtml(email) + '</strong><br><br>下一步：付款链接接入后，这里会直接跳转 Stripe / PayPal。现在请把这条线索记录到表格，并手动联系用户收款/交付首份报告。';
         });
 
         function escapeHtml(value) {
