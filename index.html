@@ -55,7 +55,7 @@
                 },
                 "offers": {
                     "@type": "Offer",
-                    "price": "19.00",
+                    "price": "9.00",
                     "priceCurrency": "USD",
                     "priceValidUntil": "2027-06-29",
                     "itemCondition": "https://schema.org/NewCondition",
@@ -328,7 +328,7 @@
                         <a class="btn secondary" href="https://www.reddit.com/r/SomebodyMakeThis/comments/1ubjoaz/why_i_dont_trust_youtube_demos_of_upcoming/" target="_blank" rel="noreferrer">Read the Reddit source</a>
                     </div>
                     <div class="proof-row">
-                        <span><strong>$19</strong> / one-time report</span>
+                        <span><strong>$9</strong> / one-time report</span>
                         <span><strong>24h</strong> delivery</span>
                         <span><strong>First 20</strong> at launch price</span>
                     </div>
@@ -426,11 +426,11 @@
                 <form class="demo-form" id="demoForm" action="https://formspree.io/f/your-form-id" method="POST">
                     <input type="url" name="campaignUrl" id="campaignUrl" placeholder="Paste Kickstarter / Indiegogo / YouTube demo URL" required>
                     <input type="email" name="buyerEmail" id="buyerEmail" placeholder="Your email for delivery" required>
-                    <button class="btn" type="submit" id="payBtn">Lock $19 Launch Price</button>
+                    <button class="btn" type="submit" id="payBtn">Lock $9 Launch Price</button>
                 </form>
                 <p id="demoResult" style="display:none; margin-top:16px; color:#cbd5e1;"></p>
                 <p style="color:var(--muted); font-size:0.88rem; margin-top:14px;">
-                    🔒 Stripe checkout coming soon. For now, submit your link and email — we'll follow up to complete payment and deliver your report.
+                    🔒 Secure payment via Stripe. You'll be redirected to checkout after submitting.
                 </p>
             </div>
         </section>
@@ -445,7 +445,7 @@
                 <div class="pricing">
                     <article class="price-card featured">
                         <h3>Launch Report</h3>
-                        <div class="price">$19 <small>/ one report</small></div>
+                        <div class="price">$9 <small>/ one report</small></div>
                         <ul class="features">
                             <li>Video editing &amp; missing footage check</li>
                             <li>Comment concern clustering</li>
@@ -453,7 +453,7 @@
                             <li>Final recommendation: Buy / Wait / Avoid</li>
                             <li>PDF or web report delivered within 24h</li>
                         </ul>
-                        <a class="btn" id="buyReportBtn" href="#order">Lock $19 →</a>
+                        <a class="btn" id="buyReportBtn" href="#order">Lock $9 →</a>
                     </article>
                     <article class="price-card">
                         <h3>Heavy Backer Plan</h3>
@@ -484,7 +484,7 @@
                         </div>
                     </details>
                     <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                        <summary itemprop="name">What do I get for $19?</summary>
+                        <summary itemprop="name">What do I get for $9?</summary>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                             <p itemprop="text">A detailed risk report delivered within 24 hours: demo video red flags, comment sentiment clustering, creator/team credibility check, and a final Buy / Wait / Avoid recommendation. First 20 reports are manually reviewed.</p>
                         </div>
@@ -524,7 +524,7 @@
         // Replace PAYMENT_LINK with your Stripe Payment Link URL
         // once you create it in Stripe Dashboard:
         //   https://dashboard.stripe.com/products
-        const PAYMENT_LINK = null; // e.g. 'https://buy.stripe.com/9AQ4hx7wN...'
+        const PAYMENT_LINK = 'https://buy.stripe.com/test_4gM3co0nX2b85JD6Lfew800'; // e.g. 'https://buy.stripe.com/9AQ4hx7wN...'
         const WAITLIST_EMAIL = 'hello@kickstarterproof.com';
 
         // ── BUTTONS ────────────────────────────────────────
