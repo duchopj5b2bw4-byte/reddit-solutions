@@ -8,3 +8,10 @@ node_modules/
 !.env.example
 *.local
 secrets/
+.wrangler/
+*.png
+devto_register*.js
+hn_*.js
+producthunt_signup*.js
+promote_all.js
+publish_telegraph.js

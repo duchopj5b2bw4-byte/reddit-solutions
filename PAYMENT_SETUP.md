@@ -11,7 +11,7 @@
 
 ## 定价
 
-### 1. Launch 验证价：$19 / 单次报告
+### 1. Launch 验证价：$9 / 单次报告
 
 适合第一批用户。
 
@@ -23,14 +23,14 @@
 - 最终建议：Buy / Wait / Avoid
 - 24 小时内邮件交付
 
-为什么 $19 合理：
+为什么 $9 合理：
 - 用户要避免的是 $200-$1000 的众筹踩坑损失。
 - 一次性买前决策比月订阅更自然。
 - 足够低摩擦，可用于 Reddit / YouTube 评论区冷启动。
 
-### 2. Standard：$29 / 单次报告
+### 2. Standard：$19 / 单次报告
 
-当出现 5-10 个付费订单后，把价格从 $19 提到 $29。
+当出现 5-10 个付费订单后，把价格从 $9 提到 $19。
 
 ### 3. Pro：$49 / 月
 
@@ -48,7 +48,7 @@
 
 1. Stripe Dashboard → Product Catalog → Add product
 2. Product name: KickstarterProof Risk Report
-3. Price: $19 one-time
+3. Price: $9 one-time
 4. Create payment link
 5. 收集字段：
    - Email
@@ -71,7 +71,7 @@ npx wrangler pages deploy . --project-name reddit-solutions --branch main
 
 如果 Stripe 还没开通：
 1. PayPal → Create payment link / PayPal.Me
-2. 固定金额 $19
+2. 固定金额 $9
 3. 页面 CTA 暂时跳转 PayPal
 4. 用户付款后通过邮箱提交 Campaign URL
 

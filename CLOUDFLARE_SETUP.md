@@ -20,5 +20,5 @@
 等待约 30 秒部署完成。
 
 ## 6. 完成！
-你的站点将在 `https://reddit-solutions.pages.dev` 上线。
+你的站点将在 `https://kickstarterproof.pages.dev` 上线。
 之后每次 `git push` 到 master 都会自动重新部署。

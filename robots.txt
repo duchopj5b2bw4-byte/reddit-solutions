@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://reddit-solutions.pages.dev/sitemap.xml
+Sitemap: https://kickstarterproof.pages.dev/sitemap.xml

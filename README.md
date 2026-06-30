@@ -26,7 +26,7 @@ npx wrangler kv:namespace create REDDIT_KV
 2. 进入 **Workers & Pages** → **创建** → **Pages** → **直接上传**
 3. 上传本目录的 ZIP 包
 4. 设置项目名: `reddit-solutions`
-5. 部署后会自动获得 `https://reddit-solutions.pages.dev` 域名
+5. 部署后会自动获得 `https://kickstarterproof.pages.dev` 域名
 
 ### 方式三：连接 Git 仓库自动部署
 
